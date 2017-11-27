@@ -1,0 +1,17 @@
+
+<input type="text" name="name" [(ngModel)]="datakeen" placeholder="Text" required>
+<div align="center">
+  <button type="button" class="btn btn-info btn-lg" (click)="covert_tab(datakeen)"><i class="fa fa-plus"></i>
+    Detect
+  </button>
+
+  <span *ngFor="let caracter of tab; let i = index">
+
+    <span *ngIf=" !test(caracter); else elseBlock"><span [ngClass]="'one'" >{{caracter}}</span>
+  </span>
+  <ng-template #elseBlock>{{caracter}}</ng-template>
+</span>
+
+
+</div>
+
